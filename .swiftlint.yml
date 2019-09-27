@@ -1,0 +1,8 @@
+disabled_rules:
+- trailing_whitespace # Codestyle
+- trailing_comma # good practice by Google Swift Styleguide
+- nesting # CatalogConstants
+- compiler_protocol_init # NSNumber(floatValue: ...)
+- identifier_name # `id`
+excluded:
+- Carthage

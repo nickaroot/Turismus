@@ -1,0 +1,8 @@
+xcassets:
+  inputs:
+    - Assets/Auth.xcassets
+  outputs:
+    - templateName: swift4
+      output: Assets/Assets.swift
+      params:
+        publicAccess: 1
