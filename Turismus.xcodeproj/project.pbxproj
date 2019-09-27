@@ -21,6 +21,9 @@
 		C35947F1233ECB4900DB6AC4 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C35947E9233ECB4900DB6AC4 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C35947F6233ECD3A00DB6AC4 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35947F5233ECD3A00DB6AC4 /* Shadow.swift */; };
 		C35947F8233ECD5B00DB6AC4 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35947F7233ECD5B00DB6AC4 /* Border.swift */; };
+		C35947FB233ECDE400DB6AC4 /* Spacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35947FA233ECDE400DB6AC4 /* Spacer.swift */; };
+		C35947FD233ECE7500DB6AC4 /* HorizontalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35947FC233ECE7500DB6AC4 /* HorizontalStack.swift */; };
+		C35947FF233ECEAF00DB6AC4 /* VerticalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35947FE233ECEAF00DB6AC4 /* VerticalStack.swift */; };
 		C3642F41233EBC8200CF3DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3642F40233EBC8200CF3DB9 /* AppDelegate.swift */; };
 		C3642F4D233EBC8500CF3DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3642F4B233EBC8500CF3DB9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -72,6 +75,9 @@
 		C35947EC233ECB4900DB6AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C35947F5233ECD3A00DB6AC4 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 		C35947F7233ECD5B00DB6AC4 /* Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
+		C35947FA233ECDE400DB6AC4 /* Spacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacer.swift; sourceTree = "<group>"; };
+		C35947FC233ECE7500DB6AC4 /* HorizontalStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalStack.swift; sourceTree = "<group>"; };
+		C35947FE233ECEAF00DB6AC4 /* VerticalStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStack.swift; sourceTree = "<group>"; };
 		C3642F3D233EBC8200CF3DB9 /* Turismus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turismus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3642F40233EBC8200CF3DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3642F4C233EBC8500CF3DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -119,12 +125,23 @@
 		C35947EA233ECB4900DB6AC4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C35947F9233ECDD200DB6AC4 /* LayoutSpecs */,
 				C35947F5233ECD3A00DB6AC4 /* Shadow.swift */,
 				C35947F7233ECD5B00DB6AC4 /* Border.swift */,
 				C35947EB233ECB4900DB6AC4 /* UI.h */,
 				C35947EC233ECB4900DB6AC4 /* Info.plist */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		C35947F9233ECDD200DB6AC4 /* LayoutSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				C35947FA233ECDE400DB6AC4 /* Spacer.swift */,
+				C35947FC233ECE7500DB6AC4 /* HorizontalStack.swift */,
+				C35947FE233ECEAF00DB6AC4 /* VerticalStack.swift */,
+			);
+			path = LayoutSpecs;
 			sourceTree = "<group>";
 		};
 		C3642F34233EBC8200CF3DB9 = {
@@ -387,7 +404,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C35947FD233ECE7500DB6AC4 /* HorizontalStack.swift in Sources */,
+				C35947FF233ECEAF00DB6AC4 /* VerticalStack.swift in Sources */,
 				C35947F6233ECD3A00DB6AC4 /* Shadow.swift in Sources */,
+				C35947FB233ECDE400DB6AC4 /* Spacer.swift in Sources */,
 				C35947F8233ECD5B00DB6AC4 /* Border.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +458,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Assets/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -469,6 +494,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Assets/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -499,6 +529,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -530,6 +565,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -599,7 +639,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -653,7 +693,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
