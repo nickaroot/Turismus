@@ -57,7 +57,7 @@ class AuthSignInNode: ASScrollNode {
     node.border = Border(radius: 10)
     
     node.contentMode = .center
-    node.image = Asset.authEmailIcon.image
+    node.image = Asset.Auth.authEmailIcon.image
     
     return node
     
@@ -131,7 +131,7 @@ class AuthSignInNode: ASScrollNode {
     node.border = Border(radius: 10)
     
     node.contentMode = .center
-    node.image = Asset.authPasswordIcon.image
+    node.image = Asset.Auth.authPasswordIcon.image
     
     return node
     
@@ -204,7 +204,7 @@ class AuthSignInNode: ASScrollNode {
     node.backgroundColor = UIColor(displayP3Red: 0.27, green: 0.5, blue: 0.76, alpha: 1.0)
     node.border = Border(radius: 10)
     
-    node.setImage(Asset.authVKLogo.image)
+    node.setImage(Asset.Auth.authVKLogo.image)
     
     return node
     

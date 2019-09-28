@@ -22,7 +22,7 @@ class AuthNode: ASDisplayNode {
     )
     
     node.contentMode = .scaleAspectFill
-    node.image = Asset.authCover.image
+    node.image = Asset.Auth.authCover.image
     
     return node
     
@@ -38,7 +38,7 @@ class AuthNode: ASDisplayNode {
     )
     
     node.contentMode = .center
-    node.image = Asset.authLogo.image
+    node.image = Asset.Auth.authLogo.image
     
     return node
     
@@ -54,7 +54,7 @@ class AuthNode: ASDisplayNode {
     )
     
     node.contentMode = .center
-    node.image = Asset.boyMemoji.image
+    node.image = Asset.Auth.boyMemoji.image
     
     return node
     
@@ -70,7 +70,7 @@ class AuthNode: ASDisplayNode {
     )
     
     node.contentMode = .center
-    node.image = Asset.girlMemoji.image
+    node.image = Asset.Auth.girlMemoji.image
     
     return node
     

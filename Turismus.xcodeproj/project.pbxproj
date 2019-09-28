@@ -16,6 +16,9 @@
 		C35408CE233F7575009F3579 /* AuthController+KeyboardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35408CC233F7557009F3579 /* AuthController+KeyboardDelegate.swift */; };
 		C35408D4233F999B009F3579 /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35408D2233F9886009F3579 /* DiscoverController.swift */; };
 		C35408D7233F9D5E009F3579 /* DiscoverNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35408D5233F9D30009F3579 /* DiscoverNode.swift */; };
+		C35408E0233FA5F4009F3579 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35408DF233FA5F4009F3579 /* Main.xcassets */; };
+		C35408E4233FA830009F3579 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35408E2233FA826009F3579 /* TabBarController.swift */; };
+		C35408E7233FA89F009F3579 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35408E6233FA89F009F3579 /* UIColor.swift */; };
 		C35947D6233EC23600DB6AC4 /* Assets.h in Headers */ = {isa = PBXBuildFile; fileRef = C35947D4233EC23600DB6AC4 /* Assets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C35947D9233EC23600DB6AC4 /* Assets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35947D2233EC23600DB6AC4 /* Assets.framework */; };
 		C35947DA233EC23600DB6AC4 /* Assets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C35947D2233EC23600DB6AC4 /* Assets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -89,6 +92,9 @@
 		C35408CC233F7557009F3579 /* AuthController+KeyboardDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthController+KeyboardDelegate.swift"; sourceTree = "<group>"; };
 		C35408D2233F9886009F3579 /* DiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
 		C35408D5233F9D30009F3579 /* DiscoverNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverNode.swift; sourceTree = "<group>"; };
+		C35408DF233FA5F4009F3579 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
+		C35408E2233FA826009F3579 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C35408E6233FA89F009F3579 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		C35947D2233EC23600DB6AC4 /* Assets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Assets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35947D4233EC23600DB6AC4 /* Assets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assets.h; sourceTree = "<group>"; };
 		C35947D5233EC23600DB6AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,24 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				C35408C8233F73CA009F3579 /* ServiceLayer.swift */,
-				C35408CF233F798E009F3579 /* Network */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		C35408CF233F798E009F3579 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				C35408D0233F799E009F3579 /* Entities */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		C35408D0233F799E009F3579 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		C35408D1233F9780009F3579 /* Discover */ = {
@@ -182,11 +172,21 @@
 			path = Discover;
 			sourceTree = "<group>";
 		};
+		C35408E1233FA807009F3579 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C35408E2233FA826009F3579 /* TabBarController.swift */,
+				C35408D1233F9780009F3579 /* Discover */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		C35947D3233EC23600DB6AC4 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				C35947E2233EC3BD00DB6AC4 /* Assets.swift */,
 				C35947E0233EC30A00DB6AC4 /* Auth.xcassets */,
+				C35408DF233FA5F4009F3579 /* Main.xcassets */,
 				C35947D4233EC23600DB6AC4 /* Assets.h */,
 				C35947D5233EC23600DB6AC4 /* Info.plist */,
 			);
@@ -224,6 +224,7 @@
 				C359488A233F1B4800DB6AC4 /* UIScrollViewDelegate.swift */,
 				C359489C233F4FB700DB6AC4 /* TargetClosure.swift */,
 				C35408CA233F74DB009F3579 /* KeyboardDelegate.swift */,
+				C35408E6233FA89F009F3579 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -280,9 +281,9 @@
 		C3642F34233EBC8200CF3DB9 = {
 			isa = PBXGroup;
 			children = (
+				C35408E1233FA807009F3579 /* Main */,
 				C35408C7233F73BB009F3579 /* Service */,
 				C359487B233EDC0800DB6AC4 /* Auth */,
-				C35408D1233F9780009F3579 /* Discover */,
 				C3642F3F233EBC8200CF3DB9 /* Base */,
 				C35947D3233EC23600DB6AC4 /* Assets */,
 				C35947EA233ECB4900DB6AC4 /* UI */,
@@ -444,6 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C35408E0233FA5F4009F3579 /* Main.xcassets in Resources */,
 				C35947E1233EC30A00DB6AC4 /* Auth.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +548,7 @@
 				C3594882233F192000DB6AC4 /* TextNode.swift in Sources */,
 				C35947FD233ECE7500DB6AC4 /* HorizontalStack.swift in Sources */,
 				C35947FF233ECEAF00DB6AC4 /* VerticalStack.swift in Sources */,
+				C35408E7233FA89F009F3579 /* UIColor.swift in Sources */,
 				C3594885233F199A00DB6AC4 /* TextAttributes.swift in Sources */,
 				C35947F6233ECD3A00DB6AC4 /* Shadow.swift in Sources */,
 				C35947FB233ECDE400DB6AC4 /* Spacer.swift in Sources */,
@@ -565,6 +568,7 @@
 			files = (
 				C359487E233EDC5300DB6AC4 /* AuthController.swift in Sources */,
 				C3594891233F229C00DB6AC4 /* AuthNode+Layout.swift in Sources */,
+				C35408E4233FA830009F3579 /* TabBarController.swift in Sources */,
 				C359488F233F1DEC00DB6AC4 /* AuthNode.swift in Sources */,
 				C3594895233F3EE200DB6AC4 /* AuthSignInNode+Layout.swift in Sources */,
 				C3594893233F3DB600DB6AC4 /* AuthSignInNode.swift in Sources */,

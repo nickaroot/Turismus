@@ -1,6 +1,7 @@
 xcassets:
   inputs:
     - Assets/Auth.xcassets
+    - Assets/Main.xcassets
   outputs:
     - templateName: swift4
       output: Assets/Assets.swift

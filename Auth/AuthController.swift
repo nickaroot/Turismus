@@ -6,6 +6,7 @@
 //  Copyright © 2019 Nikita Arutyunov. All rights reserved.
 //
 
+import UIKit
 import AsyncDisplayKit
 import UI
 
@@ -29,6 +30,12 @@ class AuthController: ASViewController<AuthNode> {
     
     navigationController?.setNavigationBarHidden(true, animated: false)
     
+    node.signInForm.signInButtonNode.touchUpInsideBlock = { [weak self] _ in
+      
+      self?.popToMain()
+      
+    }
+    
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -37,6 +44,8 @@ class AuthController: ASViewController<AuthNode> {
       willShow: keyboardWillShow(notification:),
       willHide: keyboardWillHide(notification:)
     )
+    
+    popToMain() // FIXME
     
   }
   
@@ -47,5 +56,14 @@ class AuthController: ASViewController<AuthNode> {
   }
   
   required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+  
+  func popToMain() {
+    
+    let tabBarController = TabBarController()
+    
+    navigationController?.viewControllers.insert(tabBarController, at: 0)
+    navigationController?.popViewController(animated: true)
+    
+  }
   
 }
