@@ -19,8 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let auth = UINavigationController(rootViewController: UIViewController())
     
-    UINavigationBar.appearance().tintColor = .brown
-    
     window = UIWindow()
     window?.backgroundColor = .white
     window?.rootViewController = auth
