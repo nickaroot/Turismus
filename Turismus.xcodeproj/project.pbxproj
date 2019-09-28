@@ -11,6 +11,11 @@
 		C33A5C8F233EC0DF00AD266D /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = C33A5C8E233EC0DF00AD266D /* output.xcfilelist */; };
 		C33A5C91233EC0FF00AD266D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C33A5C90233EC0FF00AD266D /* .swiftlint.yml */; };
 		C33A5C93233EC11E00AD266D /* .swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = C33A5C92233EC11E00AD266D /* .swiftgen.yml */; };
+		C35408C9233F73CA009F3579 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35408C8233F73CA009F3579 /* ServiceLayer.swift */; };
+		C35408CB233F74DB009F3579 /* KeyboardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35408CA233F74DB009F3579 /* KeyboardDelegate.swift */; };
+		C35408CE233F7575009F3579 /* AuthController+KeyboardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35408CC233F7557009F3579 /* AuthController+KeyboardDelegate.swift */; };
+		C35408D4233F999B009F3579 /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35408D2233F9886009F3579 /* DiscoverController.swift */; };
+		C35408D7233F9D5E009F3579 /* DiscoverNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35408D5233F9D30009F3579 /* DiscoverNode.swift */; };
 		C35947D6233EC23600DB6AC4 /* Assets.h in Headers */ = {isa = PBXBuildFile; fileRef = C35947D4233EC23600DB6AC4 /* Assets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C35947D9233EC23600DB6AC4 /* Assets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35947D2233EC23600DB6AC4 /* Assets.framework */; };
 		C35947DA233EC23600DB6AC4 /* Assets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C35947D2233EC23600DB6AC4 /* Assets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -31,6 +36,13 @@
 		C3594887233F19DD00DB6AC4 /* TextFieldNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3594886233F19DD00DB6AC4 /* TextFieldNode.swift */; };
 		C3594889233F1A1400DB6AC4 /* TextFieldNode+ASEditableTextNodeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3594888233F1A1400DB6AC4 /* TextFieldNode+ASEditableTextNodeDelegate.swift */; };
 		C359488B233F1B4800DB6AC4 /* UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359488A233F1B4800DB6AC4 /* UIScrollViewDelegate.swift */; };
+		C359488F233F1DEC00DB6AC4 /* AuthNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359488E233F1DEC00DB6AC4 /* AuthNode.swift */; };
+		C3594891233F229C00DB6AC4 /* AuthNode+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3594890233F229C00DB6AC4 /* AuthNode+Layout.swift */; };
+		C3594893233F3DB600DB6AC4 /* AuthSignInNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3594892233F3DB600DB6AC4 /* AuthSignInNode.swift */; };
+		C3594895233F3EE200DB6AC4 /* AuthSignInNode+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3594894233F3EE200DB6AC4 /* AuthSignInNode+Layout.swift */; };
+		C3594897233F4EBD00DB6AC4 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3594896233F4EBD00DB6AC4 /* ButtonNode.swift */; };
+		C359489B233F4F5200DB6AC4 /* ButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359489A233F4F5200DB6AC4 /* ButtonDelegate.swift */; };
+		C359489D233F4FB700DB6AC4 /* TargetClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359489C233F4FB700DB6AC4 /* TargetClosure.swift */; };
 		C3642F41233EBC8200CF3DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3642F40233EBC8200CF3DB9 /* AppDelegate.swift */; };
 		C3642F4D233EBC8500CF3DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3642F4B233EBC8500CF3DB9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -72,6 +84,11 @@
 		C33A5C8E233EC0DF00AD266D /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
 		C33A5C90233EC0FF00AD266D /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C33A5C92233EC11E00AD266D /* .swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftgen.yml; sourceTree = "<group>"; };
+		C35408C8233F73CA009F3579 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		C35408CA233F74DB009F3579 /* KeyboardDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDelegate.swift; sourceTree = "<group>"; };
+		C35408CC233F7557009F3579 /* AuthController+KeyboardDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthController+KeyboardDelegate.swift"; sourceTree = "<group>"; };
+		C35408D2233F9886009F3579 /* DiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
+		C35408D5233F9D30009F3579 /* DiscoverNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverNode.swift; sourceTree = "<group>"; };
 		C35947D2233EC23600DB6AC4 /* Assets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Assets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35947D4233EC23600DB6AC4 /* Assets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assets.h; sourceTree = "<group>"; };
 		C35947D5233EC23600DB6AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +109,13 @@
 		C3594886233F19DD00DB6AC4 /* TextFieldNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldNode.swift; sourceTree = "<group>"; };
 		C3594888233F1A1400DB6AC4 /* TextFieldNode+ASEditableTextNodeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextFieldNode+ASEditableTextNodeDelegate.swift"; sourceTree = "<group>"; };
 		C359488A233F1B4800DB6AC4 /* UIScrollViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewDelegate.swift; sourceTree = "<group>"; };
+		C359488E233F1DEC00DB6AC4 /* AuthNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNode.swift; sourceTree = "<group>"; };
+		C3594890233F229C00DB6AC4 /* AuthNode+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthNode+Layout.swift"; sourceTree = "<group>"; };
+		C3594892233F3DB600DB6AC4 /* AuthSignInNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSignInNode.swift; sourceTree = "<group>"; };
+		C3594894233F3EE200DB6AC4 /* AuthSignInNode+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthSignInNode+Layout.swift"; sourceTree = "<group>"; };
+		C3594896233F4EBD00DB6AC4 /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
+		C359489A233F4F5200DB6AC4 /* ButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelegate.swift; sourceTree = "<group>"; };
+		C359489C233F4FB700DB6AC4 /* TargetClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetClosure.swift; sourceTree = "<group>"; };
 		C3642F3D233EBC8200CF3DB9 /* Turismus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turismus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3642F40233EBC8200CF3DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3642F4C233EBC8500CF3DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -125,6 +149,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C35408C7233F73BB009F3579 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C35408C8233F73CA009F3579 /* ServiceLayer.swift */,
+				C35408CF233F798E009F3579 /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C35408CF233F798E009F3579 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C35408D0233F799E009F3579 /* Entities */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C35408D0233F799E009F3579 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C35408D1233F9780009F3579 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				C35408D2233F9886009F3579 /* DiscoverController.swift */,
+				C35408D5233F9D30009F3579 /* DiscoverNode.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
 		C35947D3233EC23600DB6AC4 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +222,8 @@
 			children = (
 				C3594801233ECF5600DB6AC4 /* ASDisplayNode.swift */,
 				C359488A233F1B4800DB6AC4 /* UIScrollViewDelegate.swift */,
+				C359489C233F4FB700DB6AC4 /* TargetClosure.swift */,
+				C35408CA233F74DB009F3579 /* KeyboardDelegate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -180,6 +239,10 @@
 			isa = PBXGroup;
 			children = (
 				C359487C233EDC1600DB6AC4 /* AuthController.swift */,
+				C35408CC233F7557009F3579 /* AuthController+KeyboardDelegate.swift */,
+				C359488E233F1DEC00DB6AC4 /* AuthNode.swift */,
+				C3594890233F229C00DB6AC4 /* AuthNode+Layout.swift */,
+				C35948A0233F6BFB00DB6AC4 /* SignIn */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -188,6 +251,8 @@
 			isa = PBXGroup;
 			children = (
 				C3594883233F197D00DB6AC4 /* Text */,
+				C3594896233F4EBD00DB6AC4 /* ButtonNode.swift */,
+				C359489A233F4F5200DB6AC4 /* ButtonDelegate.swift */,
 			);
 			path = LayoutElements;
 			sourceTree = "<group>";
@@ -203,10 +268,21 @@
 			path = Text;
 			sourceTree = "<group>";
 		};
+		C35948A0233F6BFB00DB6AC4 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				C3594892233F3DB600DB6AC4 /* AuthSignInNode.swift */,
+				C3594894233F3EE200DB6AC4 /* AuthSignInNode+Layout.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 		C3642F34233EBC8200CF3DB9 = {
 			isa = PBXGroup;
 			children = (
+				C35408C7233F73BB009F3579 /* Service */,
 				C359487B233EDC0800DB6AC4 /* Auth */,
+				C35408D1233F9780009F3579 /* Discover */,
 				C3642F3F233EBC8200CF3DB9 /* Base */,
 				C35947D3233EC23600DB6AC4 /* Assets */,
 				C35947EA233ECB4900DB6AC4 /* UI */,
@@ -465,13 +541,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C359489D233F4FB700DB6AC4 /* TargetClosure.swift in Sources */,
+				C359489B233F4F5200DB6AC4 /* ButtonDelegate.swift in Sources */,
 				C3594882233F192000DB6AC4 /* TextNode.swift in Sources */,
 				C35947FD233ECE7500DB6AC4 /* HorizontalStack.swift in Sources */,
 				C35947FF233ECEAF00DB6AC4 /* VerticalStack.swift in Sources */,
 				C3594885233F199A00DB6AC4 /* TextAttributes.swift in Sources */,
 				C35947F6233ECD3A00DB6AC4 /* Shadow.swift in Sources */,
 				C35947FB233ECDE400DB6AC4 /* Spacer.swift in Sources */,
+				C35408CB233F74DB009F3579 /* KeyboardDelegate.swift in Sources */,
 				C3594887233F19DD00DB6AC4 /* TextFieldNode.swift in Sources */,
+				C3594897233F4EBD00DB6AC4 /* ButtonNode.swift in Sources */,
 				C359488B233F1B4800DB6AC4 /* UIScrollViewDelegate.swift in Sources */,
 				C3594802233ECF5600DB6AC4 /* ASDisplayNode.swift in Sources */,
 				C35947F8233ECD5B00DB6AC4 /* Border.swift in Sources */,
@@ -484,7 +564,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C359487E233EDC5300DB6AC4 /* AuthController.swift in Sources */,
+				C3594891233F229C00DB6AC4 /* AuthNode+Layout.swift in Sources */,
+				C359488F233F1DEC00DB6AC4 /* AuthNode.swift in Sources */,
+				C3594895233F3EE200DB6AC4 /* AuthSignInNode+Layout.swift in Sources */,
+				C3594893233F3DB600DB6AC4 /* AuthSignInNode.swift in Sources */,
+				C35408D4233F999B009F3579 /* DiscoverController.swift in Sources */,
+				C35408D7233F9D5E009F3579 /* DiscoverNode.swift in Sources */,
+				C35408CE233F7575009F3579 /* AuthController+KeyboardDelegate.swift in Sources */,
 				C3642F41233EBC8200CF3DB9 /* AppDelegate.swift in Sources */,
+				C35408C9233F73CA009F3579 /* ServiceLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import AsyncDisplayKit
 
 extension TextFieldNode: ASEditableTextNodeDelegate {
   
-  open func obtainNewText(_ text: String) -> Bool {
+  open func obtainNewText(_ range: NSRange, _ text: String) -> Bool {
     
     let isNewLine = text.contains("\n")
     
@@ -26,6 +26,14 @@ extension TextFieldNode: ASEditableTextNodeDelegate {
       
     }
     
+    if isSecureTextEntry {
+      
+      secureText = ((secureText ?? "") as NSString).replacingCharacters(in: range, with: text)
+      
+      return true
+      
+    }
+    
     return true
     
   }
@@ -33,7 +41,7 @@ extension TextFieldNode: ASEditableTextNodeDelegate {
   open func editableTextNode(_ editableTextNode: ASEditableTextNode,
                              shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
     
-    return obtainNewText(text)
+    return obtainNewText(range, text)
     
   }
   
@@ -41,7 +49,15 @@ extension TextFieldNode: ASEditableTextNodeDelegate {
   
   open func editableTextNodeDidBeginEditing(_ editableTextNode: ASEditableTextNode) { }
   
-  open func editableTextNodeDidUpdateText(_ editableTextNode: ASEditableTextNode) { }
+  open func editableTextNodeDidUpdateText(_ editableTextNode: ASEditableTextNode) {
+    
+    if isSecureTextEntry {
+      
+      setAttributedText(String(repeating: "•", count: secureText?.count ?? 0))
+      
+    }
+    
+  }
   
   open func editableTextNodeDidFinishEditing(_ editableTextNode: ASEditableTextNode) { }
   

@@ -10,6 +10,8 @@ import AsyncDisplayKit
 
 open class TextFieldNode: ASEditableTextNode {
   
+  open var secureText: String?
+  
   open var attributes = [NSAttributedString.Key: Any]()
   
   open var placeholderAttributes = [NSAttributedString.Key: Any]()

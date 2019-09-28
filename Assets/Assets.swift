@@ -18,6 +18,13 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum Asset {
+  public static let authCover = ImageAsset(name: "authCover")
+  public static let authEmailIcon = ImageAsset(name: "authEmailIcon")
+  public static let authLogo = ImageAsset(name: "authLogo")
+  public static let authPasswordIcon = ImageAsset(name: "authPasswordIcon")
+  public static let authVKLogo = ImageAsset(name: "authVKLogo")
+  public static let boyMemoji = ImageAsset(name: "boyMemoji")
+  public static let girlMemoji = ImageAsset(name: "girlMemoji")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

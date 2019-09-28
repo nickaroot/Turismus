@@ -1,5 +1,5 @@
 //
-//  AuthController.swift
+//  DiscoverController.swift
 //  Turismus
 //
 //  Created by Nikita Arutyunov on 28.09.2019.
@@ -9,11 +9,11 @@
 import AsyncDisplayKit
 import UI
 
-class AuthController: ASViewController<AuthNode> {
+class DiscoverController: ASViewController<DiscoverNode> {
   
   override var preferredStatusBarStyle: UIStatusBarStyle {
     
-    return .lightContent
+    return .default
     
   }
   
@@ -21,28 +21,13 @@ class AuthController: ASViewController<AuthNode> {
   
   init() {
     
-    super.init(node: AuthNode())
+    super.init(node: DiscoverNode())
     
   }
   
   override func viewDidLoad() {
     
     navigationController?.setNavigationBarHidden(true, animated: false)
-    
-  }
-  
-  override func viewDidAppear(_ animated: Bool) {
-    
-    keyboardObserver = Keyboard.subscribe(self,
-      willShow: keyboardWillShow(notification:),
-      willHide: keyboardWillHide(notification:)
-    )
-    
-  }
-  
-  override func viewWillDisappear(_ animated: Bool) {
-    
-    Keyboard.unsubscribe(keyboardObserver)
     
   }
   
