@@ -48,6 +48,9 @@
 		C359489D233F4FB700DB6AC4 /* TargetClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C359489C233F4FB700DB6AC4 /* TargetClosure.swift */; };
 		C3642F41233EBC8200CF3DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3642F40233EBC8200CF3DB9 /* AppDelegate.swift */; };
 		C3642F4D233EBC8500CF3DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3642F4B233EBC8500CF3DB9 /* LaunchScreen.storyboard */; };
+		C3CAF4BA233FAE740058586E /* DiscoverTopBarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAF4B9233FAE740058586E /* DiscoverTopBarNode.swift */; };
+		C3CAF4BC233FAF650058586E /* DiscoverTopBarNode+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAF4BB233FAF650058586E /* DiscoverTopBarNode+Layout.swift */; };
+		C3CAF4BF233FB9C10058586E /* DiscoverNode+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAF4BE233FB9C10058586E /* DiscoverNode+Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +129,9 @@
 		C3642F40233EBC8200CF3DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3642F4C233EBC8500CF3DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3642F4E233EBC8500CF3DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3CAF4B9233FAE740058586E /* DiscoverTopBarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTopBarNode.swift; sourceTree = "<group>"; };
+		C3CAF4BB233FAF650058586E /* DiscoverTopBarNode+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiscoverTopBarNode+Layout.swift"; sourceTree = "<group>"; };
+		C3CAF4BE233FB9C10058586E /* DiscoverNode+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiscoverNode+Layout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,9 @@
 			children = (
 				C35408D2233F9886009F3579 /* DiscoverController.swift */,
 				C35408D5233F9D30009F3579 /* DiscoverNode.swift */,
+				C3CAF4BE233FB9C10058586E /* DiscoverNode+Layout.swift */,
+				C3CAF4B9233FAE740058586E /* DiscoverTopBarNode.swift */,
+				C3CAF4BB233FAF650058586E /* DiscoverTopBarNode+Layout.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -570,10 +579,13 @@
 				C3594891233F229C00DB6AC4 /* AuthNode+Layout.swift in Sources */,
 				C35408E4233FA830009F3579 /* TabBarController.swift in Sources */,
 				C359488F233F1DEC00DB6AC4 /* AuthNode.swift in Sources */,
+				C3CAF4BC233FAF650058586E /* DiscoverTopBarNode+Layout.swift in Sources */,
 				C3594895233F3EE200DB6AC4 /* AuthSignInNode+Layout.swift in Sources */,
 				C3594893233F3DB600DB6AC4 /* AuthSignInNode.swift in Sources */,
 				C35408D4233F999B009F3579 /* DiscoverController.swift in Sources */,
 				C35408D7233F9D5E009F3579 /* DiscoverNode.swift in Sources */,
+				C3CAF4BA233FAE740058586E /* DiscoverTopBarNode.swift in Sources */,
+				C3CAF4BF233FB9C10058586E /* DiscoverNode+Layout.swift in Sources */,
 				C35408CE233F7575009F3579 /* AuthController+KeyboardDelegate.swift in Sources */,
 				C3642F41233EBC8200CF3DB9 /* AppDelegate.swift in Sources */,
 				C35408C9233F73CA009F3579 /* ServiceLayer.swift in Sources */,

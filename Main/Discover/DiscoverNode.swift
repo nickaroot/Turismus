@@ -11,6 +11,36 @@ import UI
 
 class DiscoverNode: ASDisplayNode {
   
+  let topBarNode: DiscoverTopBarNode = {
+    
+    let node = DiscoverTopBarNode()
+    
+    node.backgroundColor = .white
+    
+    node.shadow = Shadow(
+      color: UIColor(displayP3Red: 0.93, green: 0.91, blue: 1, alpha: 1),
+      radius: 14,
+      opacity: 0.25,
+      offset: CGSize(width: 0, height: 14)
+    )
+    
+    node.zPosition = 52
+    
+    return node
+    
+  }()
+  
+  let tableNode: ASTableNode = {
+    
+    let node = ASTableNode()
+    
+    node.style.flexGrow = 1
+    node.zPosition = 51
+    
+    return node
+    
+  }()
+  
   override init() {
     
     super.init()
