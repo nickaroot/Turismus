@@ -28,6 +28,7 @@ public enum Asset {
     public static let girlMemoji = ImageAsset(name: "girlMemoji")
   }
   public enum Main {
+    public static let discoverBoyMemoji = ImageAsset(name: "discoverBoyMemoji")
     public static let paris = ImageAsset(name: "paris")
     public static let searchIcon = ImageAsset(name: "searchIcon")
     public static let tabBarDiscover = ImageAsset(name: "tabBarDiscover")

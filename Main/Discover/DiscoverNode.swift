@@ -30,9 +30,9 @@ class DiscoverNode: ASDisplayNode {
     
   }()
   
-  let tableNode: ASTableNode = {
+  let tableNode: DiscoverTableNode = {
     
-    let node = ASTableNode()
+    let node = DiscoverTableNode()
     
     node.style.flexGrow = 1
     node.zPosition = 51

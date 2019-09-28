@@ -15,7 +15,6 @@ extension DiscoverNode {
     
     let stack = VerticalStack()
     
-    topBarNode.style.spacingBefore = UIApplication.shared.statusBarFrame.height
     stack.addElement(topBarNode)
     
     stack.addElement(tableNode)

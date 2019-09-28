@@ -45,7 +45,7 @@ class AuthController: ASViewController<AuthNode> {
       willHide: keyboardWillHide(notification:)
     )
     
-    popToMain() // FIXME
+//    popToMain() // FIXME
     
   }
   

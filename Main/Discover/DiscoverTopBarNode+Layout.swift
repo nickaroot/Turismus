@@ -15,18 +15,21 @@ extension DiscoverTopBarNode {
     
     let stack = VerticalStack()
     
-    titleNode.style.spacingBefore = 46
+    titleNode.style.spacingBefore = 34
     stack.addElement(titleNode)
-    
+      
     let searchStack = HorizontalStack(aligned: .none, .center)
     searchFieldNode.style.spacingBefore = 3
     
+    searchFieldNode.style.spacingBefore = 0
     searchStack.addElement(searchFieldNode)
     searchStack.addElement(Spacer)
     searchStack.addElement(searchButtonNode)
     
+    stack.addElement(searchStack)
+    
     stack.addElement(ASInsetLayoutSpec(
-      insets: UIEdgeInsets(top: 17, left: 0, bottom: 0, right: -30),
+      insets: UIEdgeInsets(top: 6, left: 0, bottom: 0, right: -30),
       child: bottomLineNode
     ))
     
