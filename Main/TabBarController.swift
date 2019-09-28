@@ -30,9 +30,23 @@ class TabBarController: ASTabBarController {
     
     setViewControllers([discoverNavigation, progressNavigation], animated: false)
     
-    tabBar.shadowImage = UIImage()
-    tabBar.backgroundImage = UIImage()
-    tabBar.backgroundColor = .clear
+    if #available(iOS 13, *) {
+
+      let appearance = self.tabBar.standardAppearance.copy()
+      
+      appearance.backgroundImage = UIImage()
+      appearance.shadowImage = UIImage()
+      appearance.shadowColor = .clear
+        
+      tabBar.standardAppearance = appearance
+      
+    } else {
+      
+      tabBar.shadowImage = UIImage()
+      tabBar.backgroundImage = UIImage()
+      tabBar.backgroundColor = .clear
+      
+    }
     
     tabBar.tintColor = .main
     tabBar.barTintColor = .white

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32B0619233FFE3E00545EA8 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32B0618233FFE3E00545EA8 /* AppIcon.xcassets */; };
+		C32B061B2340047500545EA8 /* DiscoverEmptyNode+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32B061A2340047500545EA8 /* DiscoverEmptyNode+Layout.swift */; };
 		C33A5C8D233EC0C500AD266D /* input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = C33A5C8C233EC0C500AD266D /* input.xcfilelist */; };
 		C33A5C8F233EC0DF00AD266D /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = C33A5C8E233EC0DF00AD266D /* output.xcfilelist */; };
 		C33A5C91233EC0FF00AD266D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C33A5C90233EC0FF00AD266D /* .swiftlint.yml */; };
@@ -19,6 +21,7 @@
 		C35408E0233FA5F4009F3579 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35408DF233FA5F4009F3579 /* Main.xcassets */; };
 		C35408E4233FA830009F3579 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35408E2233FA826009F3579 /* TabBarController.swift */; };
 		C35408E7233FA89F009F3579 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35408E6233FA89F009F3579 /* UIColor.swift */; };
+		C355BA5A234009C80088D37B /* DiscoverController+KeyboardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355BA59234009C80088D37B /* DiscoverController+KeyboardDelegate.swift */; };
 		C35947D6233EC23600DB6AC4 /* Assets.h in Headers */ = {isa = PBXBuildFile; fileRef = C35947D4233EC23600DB6AC4 /* Assets.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C35947D9233EC23600DB6AC4 /* Assets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C35947D2233EC23600DB6AC4 /* Assets.framework */; };
 		C35947DA233EC23600DB6AC4 /* Assets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C35947D2233EC23600DB6AC4 /* Assets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -90,6 +93,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C32B0618233FFE3E00545EA8 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
+		C32B061A2340047500545EA8 /* DiscoverEmptyNode+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiscoverEmptyNode+Layout.swift"; sourceTree = "<group>"; };
 		C33A5C8C233EC0C500AD266D /* input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
 		C33A5C8E233EC0DF00AD266D /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
 		C33A5C90233EC0FF00AD266D /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -102,6 +107,7 @@
 		C35408DF233FA5F4009F3579 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
 		C35408E2233FA826009F3579 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		C35408E6233FA89F009F3579 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C355BA59234009C80088D37B /* DiscoverController+KeyboardDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiscoverController+KeyboardDelegate.swift"; sourceTree = "<group>"; };
 		C35947D2233EC23600DB6AC4 /* Assets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Assets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35947D4233EC23600DB6AC4 /* Assets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assets.h; sourceTree = "<group>"; };
 		C35947D5233EC23600DB6AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,7 +135,7 @@
 		C3594896233F4EBD00DB6AC4 /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
 		C359489A233F4F5200DB6AC4 /* ButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelegate.swift; sourceTree = "<group>"; };
 		C359489C233F4FB700DB6AC4 /* TargetClosure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetClosure.swift; sourceTree = "<group>"; };
-		C3642F3D233EBC8200CF3DB9 /* Turismus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turismus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3642F3D233EBC8200CF3DB9 /* Туризмус.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Туризмус.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3642F40233EBC8200CF3DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3642F4C233EBC8500CF3DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3642F4E233EBC8500CF3DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -169,6 +175,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C32B061C2340085900545EA8 /* TopBar */ = {
+			isa = PBXGroup;
+			children = (
+				C3CAF4B9233FAE740058586E /* DiscoverTopBarNode.swift */,
+				C3CAF4BB233FAF650058586E /* DiscoverTopBarNode+Layout.swift */,
+			);
+			path = TopBar;
+			sourceTree = "<group>";
+		};
 		C35408C7233F73BB009F3579 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,12 +196,12 @@
 			isa = PBXGroup;
 			children = (
 				C35408D2233F9886009F3579 /* DiscoverController.swift */,
+				C355BA59234009C80088D37B /* DiscoverController+KeyboardDelegate.swift */,
 				C35408D5233F9D30009F3579 /* DiscoverNode.swift */,
 				C3CAF4BE233FB9C10058586E /* DiscoverNode+Layout.swift */,
 				C3891D5D233FD4C900C7C6C0 /* Empty */,
 				C3891D58233FD31A00C7C6C0 /* Table */,
-				C3CAF4B9233FAE740058586E /* DiscoverTopBarNode.swift */,
-				C3CAF4BB233FAF650058586E /* DiscoverTopBarNode+Layout.swift */,
+				C32B061C2340085900545EA8 /* TopBar */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -318,7 +333,7 @@
 		C3642F3E233EBC8200CF3DB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C3642F3D233EBC8200CF3DB9 /* Turismus.app */,
+				C3642F3D233EBC8200CF3DB9 /* Туризмус.app */,
 				C35947D2233EC23600DB6AC4 /* Assets.framework */,
 				C35947E9233ECB4900DB6AC4 /* UI.framework */,
 			);
@@ -331,6 +346,7 @@
 				C3642F40233EBC8200CF3DB9 /* AppDelegate.swift */,
 				C3642F4B233EBC8500CF3DB9 /* LaunchScreen.storyboard */,
 				C3642F4E233EBC8500CF3DB9 /* Info.plist */,
+				C32B0618233FFE3E00545EA8 /* AppIcon.xcassets */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -349,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				C3891D5E233FD4E200C7C6C0 /* DiscoverEmptyNode.swift */,
+				C32B061A2340047500545EA8 /* DiscoverEmptyNode+Layout.swift */,
 			);
 			path = Empty;
 			sourceTree = "<group>";
@@ -431,7 +448,7 @@
 			);
 			name = Turismus;
 			productName = Turismus;
-			productReference = C3642F3D233EBC8200CF3DB9 /* Turismus.app */;
+			productReference = C3642F3D233EBC8200CF3DB9 /* Туризмус.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -500,6 +517,7 @@
 			files = (
 				C33A5C91233EC0FF00AD266D /* .swiftlint.yml in Resources */,
 				C33A5C93233EC11E00AD266D /* .swiftgen.yml in Resources */,
+				C32B0619233FFE3E00545EA8 /* AppIcon.xcassets in Resources */,
 				C3642F4D233EBC8500CF3DB9 /* LaunchScreen.storyboard in Resources */,
 				C33A5C8F233EC0DF00AD266D /* output.xcfilelist in Resources */,
 				C33A5C8D233EC0C500AD266D /* input.xcfilelist in Resources */,
@@ -617,9 +635,11 @@
 				C3CAF4BA233FAE740058586E /* DiscoverTopBarNode.swift in Sources */,
 				C3CAF4BF233FB9C10058586E /* DiscoverNode+Layout.swift in Sources */,
 				C3891D57233FD1F800C7C6C0 /* DiscoverTableNode.swift in Sources */,
+				C32B061B2340047500545EA8 /* DiscoverEmptyNode+Layout.swift in Sources */,
 				C35408CE233F7575009F3579 /* AuthController+KeyboardDelegate.swift in Sources */,
 				C3642F41233EBC8200CF3DB9 /* AppDelegate.swift in Sources */,
 				C35408C9233F73CA009F3579 /* ServiceLayer.swift in Sources */,
+				C355BA5A234009C80088D37B /* DiscoverController+KeyboardDelegate.swift in Sources */,
 				C3891D5A233FD32C00C7C6C0 /* DiscoverTableNode+Delegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -927,7 +947,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nickaroot.Turismus;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Туризмус";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -953,7 +973,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nickaroot.Turismus;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Туризмус";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

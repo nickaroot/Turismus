@@ -39,6 +39,11 @@ class DiscoverEmptyNode: ASDisplayNode {
       alignment: .center
     ))
     
+    node.setAttributedText("""
+      Привет, встряхни телефон
+      и я покажу случайный тур
+      """)
+    
     return node
     
   }()

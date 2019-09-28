@@ -41,6 +41,16 @@ class DiscoverNode: ASDisplayNode {
     
   }()
   
+  let emptyNode: DiscoverEmptyNode = {
+    
+    let node = DiscoverEmptyNode()
+    
+    node.style.flexGrow = 1.0
+    
+    return node
+    
+  }()
+  
   override init() {
     
     super.init()

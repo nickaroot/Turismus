@@ -31,6 +31,21 @@ class DiscoverController: ASViewController<DiscoverNode> {
     
   }
   
+  override func viewDidAppear(_ animated: Bool) {
+      
+      keyboardObserver = Keyboard.subscribe(self,
+        willShow: keyboardWillShow(notification:),
+        willHide: keyboardWillHide(notification:)
+      )
+      
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+      
+      Keyboard.unsubscribe(keyboardObserver)
+      
+    }
+  
   required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
   
 }

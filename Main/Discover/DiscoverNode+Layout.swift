@@ -17,7 +17,7 @@ extension DiscoverNode {
     
     stack.addElement(topBarNode)
     
-    stack.addElement(tableNode)
+    stack.addElement(emptyNode)
     
     return stack
     
