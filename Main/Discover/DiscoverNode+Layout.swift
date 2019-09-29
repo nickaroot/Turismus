@@ -15,9 +15,11 @@ extension DiscoverNode {
     
     let stack = VerticalStack()
     
+    topBarNode.searchFieldNode.setAttributedText("Франция")
     stack.addElement(topBarNode)
     
-    stack.addElement(emptyNode)
+//    stack.addElement(emptyNode)
+    stack.addElement(tableNode)
     
     return stack
     

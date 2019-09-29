@@ -36,6 +36,7 @@ class DiscoverNode: ASDisplayNode {
     
     node.style.flexGrow = 1
     node.zPosition = 51
+    node.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
     
     return node
     
@@ -45,7 +46,8 @@ class DiscoverNode: ASDisplayNode {
     
     let node = DiscoverEmptyNode()
     
-    node.style.flexGrow = 1.0
+    node.style.flexGrow = 1
+    node.zPosition = 50
     
     return node
     
@@ -56,6 +58,8 @@ class DiscoverNode: ASDisplayNode {
     super.init()
     
     automaticallyManagesSubnodes = true
+    
+    backgroundColor = .white
     
   }
   

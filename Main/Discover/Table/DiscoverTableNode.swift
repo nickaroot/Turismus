@@ -16,6 +16,8 @@ class DiscoverTableNode: ASTableNode {
     
     super.init(style: style)
     
+    view.separatorStyle = .none
+    
   }
   
 }

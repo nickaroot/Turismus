@@ -33,10 +33,13 @@ class DiscoverTopBarNode: ASDisplayNode {
     
     let node = TextFieldNode()
     
+    node.style.flexGrow = 1.0
+    
     node.setAttributes(TextAttributes(
       color: .black,
       font: .systemFont(ofSize: 18, weight: .semibold),
-      lineHeight: 21
+      lineHeight: 21,
+      lineBreak: .byTruncatingTail
     ))
     
     node.setPlaceholderAttributes(TextAttributes(

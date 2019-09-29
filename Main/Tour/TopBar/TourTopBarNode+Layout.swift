@@ -1,15 +1,15 @@
 //
-//  DiscoverTopBarNode+Layout.swift
+//  TourTopBarNode+Layout.swift
 //  Turismus
 //
-//  Created by Nikita Arutyunov on 28.09.2019.
+//  Created by Nikita Arutyunov on 29.09.2019.
 //  Copyright © 2019 Nikita Arutyunov. All rights reserved.
 //
 
 import AsyncDisplayKit
 import UI
 
-extension DiscoverTopBarNode {
+extension TourTopBarNode {
   
   override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
     
@@ -18,13 +18,15 @@ extension DiscoverTopBarNode {
     titleNode.style.spacingBefore = 34
     stack.addElement(titleNode)
       
-    let searchStack = HorizontalStack(aligned: .none, .center)
+    let nameStack = HorizontalStack(aligned: .none, .center)
     
-    searchFieldNode.style.spacingBefore = 0
-    searchStack.addElement(searchFieldNode)
-    searchStack.addElement(searchButtonNode)
+    backButtonNode.style.spacingBefore = -18
+    nameStack.addElement(backButtonNode)
     
-    stack.addElement(searchStack)
+    destinationTextNode.style.spacingBefore = -2
+    nameStack.addElement(destinationTextNode)
+    
+    stack.addElement(nameStack)
     
     stack.addElement(ASInsetLayoutSpec(
       insets: UIEdgeInsets(top: 6, left: 0, bottom: 0, right: -30),

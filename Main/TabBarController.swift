@@ -25,10 +25,15 @@ class TabBarController: ASTabBarController {
     
     let progressNavigation = ASNavigationController(rootViewController: UIViewController())
     
-    progressNavigation.tabBarItem = UITabBarItem(title: "", image: Asset.Main.tabBarProgress.image, tag: 1)
+    progressNavigation.tabBarItem = UITabBarItem(title: "", image: Asset.Main.tabBarProgress.image, tag: 2)
     progressNavigation.tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: -4, right: 0)
     
-    setViewControllers([discoverNavigation, progressNavigation], animated: false)
+    let profileNavigation = ASNavigationController(rootViewController: UIViewController())
+    
+    profileNavigation.tabBarItem = UITabBarItem(title: "", image: Asset.Main.tabBarProfile.image, tag: 3)
+    profileNavigation.tabBarItem.imageInsets = UIEdgeInsets(top: 4, left: 0, bottom: -4, right: 0)
+    
+    setViewControllers([discoverNavigation, progressNavigation, profileNavigation], animated: false)
     
     if #available(iOS 13, *) {
 

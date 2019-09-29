@@ -32,7 +32,11 @@ public enum Asset {
     public static let paris = ImageAsset(name: "paris")
     public static let searchIcon = ImageAsset(name: "searchIcon")
     public static let tabBarDiscover = ImageAsset(name: "tabBarDiscover")
+    public static let tabBarProfile = ImageAsset(name: "tabBarProfile")
     public static let tabBarProgress = ImageAsset(name: "tabBarProgress")
+    public static let tourBack = ImageAsset(name: "tourBack")
+    public static let tourDepartureArrow = ImageAsset(name: "tourDepartureArrow")
+    public static let tourFlightArrows = ImageAsset(name: "tourFlightArrows")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
