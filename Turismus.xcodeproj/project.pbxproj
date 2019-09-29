@@ -69,7 +69,6 @@
 		C3642F41233EBC8200CF3DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3642F40233EBC8200CF3DB9 /* AppDelegate.swift */; };
 		C3642F4D233EBC8500CF3DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3642F4B233EBC8500CF3DB9 /* LaunchScreen.storyboard */; };
 		C3891D57233FD1F800C7C6C0 /* DiscoverTableNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3891D56233FD1F800C7C6C0 /* DiscoverTableNode.swift */; };
-		C3891D5C233FD37200C7C6C0 /* DiscoverTableNode+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3891D5B233FD37200C7C6C0 /* DiscoverTableNode+DataSource.swift */; };
 		C3891D5F233FD4E200C7C6C0 /* DiscoverEmptyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3891D5E233FD4E200C7C6C0 /* DiscoverEmptyNode.swift */; };
 		C3CAF4BA233FAE740058586E /* DiscoverTopBarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAF4B9233FAE740058586E /* DiscoverTopBarNode.swift */; };
 		C3CAF4BC233FAF650058586E /* DiscoverTopBarNode+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CAF4BB233FAF650058586E /* DiscoverTopBarNode+Layout.swift */; };
@@ -173,7 +172,6 @@
 		C3642F4C233EBC8500CF3DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3642F4E233EBC8500CF3DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3891D56233FD1F800C7C6C0 /* DiscoverTableNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableNode.swift; sourceTree = "<group>"; };
-		C3891D5B233FD37200C7C6C0 /* DiscoverTableNode+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiscoverTableNode+DataSource.swift"; sourceTree = "<group>"; };
 		C3891D5E233FD4E200C7C6C0 /* DiscoverEmptyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverEmptyNode.swift; sourceTree = "<group>"; };
 		C3CAF4B9233FAE740058586E /* DiscoverTopBarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTopBarNode.swift; sourceTree = "<group>"; };
 		C3CAF4BB233FAF650058586E /* DiscoverTopBarNode+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiscoverTopBarNode+Layout.swift"; sourceTree = "<group>"; };
@@ -459,7 +457,6 @@
 			isa = PBXGroup;
 			children = (
 				C3891D56233FD1F800C7C6C0 /* DiscoverTableNode.swift */,
-				C3891D5B233FD37200C7C6C0 /* DiscoverTableNode+DataSource.swift */,
 				C355BA5B23400D800088D37B /* Cell */,
 			);
 			path = Table;
@@ -740,7 +737,6 @@
 				C355BA7B23403AA60088D37B /* TourOptionNode.swift in Sources */,
 				C355BA5D23400D8E0088D37B /* DiscoverTableCellNode.swift in Sources */,
 				C35408D7233F9D5E009F3579 /* DiscoverNode.swift in Sources */,
-				C3891D5C233FD37200C7C6C0 /* DiscoverTableNode+DataSource.swift in Sources */,
 				C355BA752340301D0088D37B /* TourScrollNode+Layout.swift in Sources */,
 				C355BA772340330D0088D37B /* DiscoverController+ASTableDelegate.swift in Sources */,
 				C3891D5F233FD4E200C7C6C0 /* DiscoverEmptyNode.swift in Sources */,

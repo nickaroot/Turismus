@@ -15,9 +15,9 @@ class TourNode: ASDisplayNode {
   let topBar: TourTopBarNode
   let scrollNode: TourScrollNode
   
-  init(_ info: DiscoverTableCellNode.Info) {
+  init(_ info: ServiceLayer.Trip) {
     
-    topBar = TourNode.topBar(info.text)
+    topBar = TourNode.topBar(info.flight.destination_name)
     scrollNode = TourNode.scrollNode(info)
     
     super.init()

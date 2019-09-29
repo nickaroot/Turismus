@@ -30,7 +30,7 @@ extension TourNode {
     
   }
   
-  class func scrollNode(_ info: DiscoverTableCellNode.Info) -> TourScrollNode {
+  class func scrollNode(_ info: ServiceLayer.Trip) -> TourScrollNode {
     
     let node = TourScrollNode(info)
     

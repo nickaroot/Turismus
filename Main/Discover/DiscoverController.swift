@@ -86,6 +86,17 @@ class DiscoverController: ASViewController<DiscoverNode> {
     node.tableNode.delegate = self
     node.tableNode.dataSource = self
     
+    node.topBarNode.searchButtonNode.touchUpInsideBlock = { [weak self] _ in
+      
+      ServiceLayer.cityAutocomplete(term: ServiceLayer.CityAutocomplete(
+        term: self?.node.topBarNode.searchFieldNode.attributedText?.string ?? "")) { (success, error) in
+        
+          debugPrint(error)
+        
+      }
+      
+    }
+    
   }
   
   override func viewDidAppear(_ animated: Bool) {

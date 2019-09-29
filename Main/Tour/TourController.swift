@@ -18,7 +18,7 @@ class TourController: ASViewController<TourNode> {
     
   }
   
-  init(_ info: DiscoverTableCellNode.Info) {
+  init(_ info: ServiceLayer.Trip) {
     
     super.init(node: TourNode(info))
     

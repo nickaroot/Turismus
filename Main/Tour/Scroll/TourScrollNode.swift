@@ -253,21 +253,21 @@ class TourScrollNode: ASScrollNode {
     
   }()
   
-  let info: DiscoverTableCellNode.Info
+  let info: ServiceLayer.Trip
   
-  init(_ info: DiscoverTableCellNode.Info) {
+  init(_ info: ServiceLayer.Trip) {
     
     self.info = info
     
     flightDepartureNode = TourScrollNode.flightOptionNode("Санкт-Петербург")
     flightDepartureNode.zPosition = 101
-    flightDestinationNode = TourScrollNode.flightOptionNode("Франция")
+    flightDestinationNode = TourScrollNode.flightOptionNode(info.flight.destination_name)
     flightDestinationNode.zPosition = 102
     
-    departureTimeNode = TourScrollNode.departureOptionNode("21 июля 2019 в 18:40")
-    backDepartureTimeNode = TourScrollNode.departureOptionNode("29 июля 2019 в 16:20")
+    departureTimeNode = TourScrollNode.departureOptionNode(info.flight.depart_date)
+    backDepartureTimeNode = TourScrollNode.departureOptionNode(info.flight.return_date)
     
-    priceNode = TourScrollNode.priceNode("12 000 ₽")
+    priceNode = TourScrollNode.priceNode(info.averagePrice)
     
     super.init()
     
@@ -276,12 +276,12 @@ class TourScrollNode: ASScrollNode {
     view.alwaysBounceVertical = true
     
     locationImageNode.setURL(
-      URL(string: info.imageURL),
+      URL(string: info.picture),
       resetToDefault: false
     )
     
     hotelImageNode.setURL( // FIXME
-      URL(string: info.imageURL),
+      URL(string: info.picture),
       resetToDefault: false
     )
     

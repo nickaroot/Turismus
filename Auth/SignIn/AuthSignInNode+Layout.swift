@@ -75,9 +75,9 @@ extension AuthSignInNode {
     
     let signInStack = HorizontalStack()
     
-    signInStack.addElement(vkSignInButtonNode)
+//    signInStack.addElement(vkSignInButtonNode)
     
-    signInButtonNode.style.spacingBefore = 12
+//    signInButtonNode.style.spacingBefore = 12
     signInStack.addElement(signInButtonNode)
     
     stack.addElement(signInStack)

@@ -192,23 +192,23 @@ class AuthSignInNode: ASScrollNode {
     
   }()
   
-  let vkSignInButtonNode: ButtonNode = {
-    
-    let node = ButtonNode()
-    
-    node.size = ASLayoutSize(
-      width: ASDimension(unit: .points, value: 55),
-      height: ASDimension(unit: .points, value: 55)
-    )
-    
-    node.backgroundColor = UIColor(displayP3Red: 0.27, green: 0.5, blue: 0.76, alpha: 1.0)
-    node.border = Border(radius: 10)
-    
-    node.setImage(Asset.Auth.authVKLogo.image)
-    
-    return node
-    
-  }()
+//  let vkSignInButtonNode: ButtonNode = {
+//
+//    let node = ButtonNode()
+//
+//    node.size = ASLayoutSize(
+//      width: ASDimension(unit: .points, value: 55),
+//      height: ASDimension(unit: .points, value: 55)
+//    )
+//
+//    node.backgroundColor = UIColor(displayP3Red: 0.27, green: 0.5, blue: 0.76, alpha: 1.0)
+//    node.border = Border(radius: 10)
+//
+//    node.setImage(Asset.Auth.authVKLogo.image)
+//
+//    return node
+//
+//  }()
   
   let signInButtonNode: ButtonNode = {
     
